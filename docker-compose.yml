@@ -1,0 +1,16 @@
+version: '3.1'
+services:
+  postgres:
+    image: 'postgres:10'
+    container_name: 'java-postgres'
+    environment:
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=univercity
+
+  app:
+    build: ./
+    container_name: 'university-app'
+    ports:
+      - 8080:8080
+
