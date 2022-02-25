@@ -20,8 +20,7 @@ public class ScheduleService {
     private ScheduleRepository scheduleRepository;
     @Autowired
     private StudentService studentService;
-    @Autowired
-    private TeacherService teacherService;
+
 
 
     public Schedule create(Schedule schedule) {

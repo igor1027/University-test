@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 
+import javax.validation.constraints.NotBlank;
 import java.util.List;
 
 
@@ -18,9 +19,9 @@ public class RequestSubjectDto {
 
 
     private Long id;
-
+    @NotBlank
     private String name;
-
+    @NotBlank
     private int roomNumber;
 
 //    private Teacher teacher;

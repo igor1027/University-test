@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import java.time.DayOfWeek;
 import java.util.List;
 
@@ -31,6 +32,7 @@ public class Schedule {
     @Enumerated(EnumType.STRING)
     private DayOfWeek dayOfWeek;
 
+    @NotBlank
     private String numberGroup;
 
 }
